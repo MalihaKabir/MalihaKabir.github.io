@@ -83,7 +83,7 @@ html{
 }
 
 @media (max-width: 576px) {
-  .skills h2, .aboutContentPadding h2{
+  .skills h2, .aboutContentPadding h2, .extraKnowledge h2{
     border-bottom: solid rgb(34, 134, 229);
     border-width: thin;
   }
