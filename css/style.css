@@ -8,7 +8,7 @@ html{
   padding-left: 1em;
 }
 #navId{
-  transition: top 1s;
+  transition: top 0.5s;
 }
 .doubleDown{
   padding-top: 0.8rem;
