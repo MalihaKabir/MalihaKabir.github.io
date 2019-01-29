@@ -1,0 +1,14 @@
+body{
+  height: 100vh;
+  padding-top: 50px;
+  /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(100, 177, 255)); */
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 240, 240));
+}
+#heading{
+  width: 50%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #666;
+}
+.done{
+  text-decoration: line-through;
+}
