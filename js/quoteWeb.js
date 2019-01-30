@@ -42,7 +42,7 @@ switch (day) {
       quote.innerHTML = `A year from now you may wish you had started today.`
       footer.innerHTML = `Karen Lamb`
       date.innerHTML = today
-      greeting.innerHTML = `Let's make it better instead of regreting! Best wishes for the last day, (<strong>Thursday</strong>) of the week.`
+      greeting.innerHTML = `Let's make it better instead of regretting! Best wishes for the last day (<strong>Thursday</strong>) of the week.`
       bgColor.style.background = 'linear-gradient(to right, rgb(255, 255, 255), #dc3545)'
       break
     case 5:
