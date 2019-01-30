@@ -1,4 +1,4 @@
-let css = document.querySelector('h3')
+let css = document.querySelector('p')
 let left = document.querySelector('#left')
 let right = document.querySelector('#right')
 let body = document.getElementById('bodyGradient')
