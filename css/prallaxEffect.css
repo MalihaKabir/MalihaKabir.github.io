@@ -1,0 +1,114 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 1rem; /* use 1rem(16px), because rem is user friendly as well as responsive but px is not. */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position: relative;
+  opacity: 0.60;
+  background-position: center; /* it uses to make sure that images to be centered */
+  background-size: cover; /* it makes sure that our images are covering their entire space */
+  background-repeat: no-repeat;
+
+  /*
+    fixed = Parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg1{
+  background-image: url('../img/image1.jpeg');
+  min-height: 100%;
+}
+
+.pimg2{
+  background-image: url('../img/image2.jpeg');
+  min-height: 400px;
+}
+
+.pimg3{
+  background-image: url('../img/img3.jpg');
+  min-height: 400px;
+}
+
+.pimg4{
+  background-image: url('../img/img4.2.jpeg');
+  min-height: 400px;
+
+  /* U MAY TRY THESE FOR LEARNING PURPOSE: */
+  /* opacity: 0.90; */
+  /* position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 1.61rem; /* 27px; 27px/16px = 1.7 */
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border, .ptext .border2, .ptext .border3{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border2, .ptext .border3{
+  background-color: transparent;
+  /* color: #fff; */
+}
+
+@media (max-width: 568px) {
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+
+  span{
+    font-size: 0.625rem; /* 10px; */ /* 1rem = 16px. So, 10px/16px = 0.625rem */
+    font-size: 0.78rem; /* overridden previous font-size for learning purpose */
+    letter-spacing: 4px;
+    /* line-height: 16px; */
+  }
+
+  .ptext .border2, .ptext .border3{
+    font-size: 1rem; /* 12px; */
+    font-weight: bolder;
+    /* color: #000; */
+  }
+}
+
+@media (max-width: 338px) {
+  span{
+    font-size: 0.5rem; /* 8px; */
+    letter-spacing: 3px;
+  }
+}
