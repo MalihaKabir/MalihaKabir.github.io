@@ -58,7 +58,7 @@ html{
   height: 150px;
   border: 3px solid rgb(34, 134, 229);
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) , (max-width: 576px) {
   .imgSize{
     border: 2px solid rgb(34, 134, 229);
   }
