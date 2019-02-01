@@ -15,18 +15,19 @@
   <style media="screen">
     body{
       height: 100vh;
-/*       background-image: linear-gradient(to right, rgb(128, 255, 255), rgb(0, 128, 255)); */
-      background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 255, 255), rgb(0, 128, 255), rgb(128, 255, 255), #e94584, rgb(255, 128, 192), rgb(255, 255, 128), rgb(128, 255, 128), rgb(255, 255, 128), rgb(255, 255, 255));
+      background-image: linear-gradient(to right, rgb(128, 255, 255), rgb(0, 128, 255));
+/*       background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 255, 255), rgb(0, 128, 255), rgb(128, 255, 255), #e94584, rgb(255, 128, 192), rgb(255, 255, 128), rgb(128, 255, 128), rgb(255, 255, 128), rgb(255, 255, 255));
       background-size: 1000% 100%;
-      animation: gradient 50s linear infinite;
+      animation: gradient 50s linear infinite; */
 /*       animation: gradient 16s linear infinite; */
-      animation-direction: alternate;
+/*       animation-direction: alternate; */
     }
+    
 /*     keyframe for gradient body */
-    @keyframes gradient {
+/*     @keyframes gradient {
       0% {background-position: 0%}
       100% {background-position: 100%}
-    }
+      } */
     
     .containerPadding{
       padding: 100px;
@@ -47,12 +48,12 @@
       }
     }
     @media (max-width: 576px) {
-      body{
+/*       body{
         background-image: linear-gradient(to right, rgb(128, 255, 255), rgb(0, 128, 255));
         background-size: 200% 100%;
         animation: gradient 0s linear infinite;
-/*         animation-direction: alternate; */
-      }
+        animation-direction: alternate;
+      } */
       .containerPadding{
         padding: 30px;
         padding-top: 50px;
