@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- icons link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- favicon link -->
+  <link rel="shortcut icon" type="image/ico" href="img/favicon-connectdevelop1.ico">
+<!--   my css -->
+<!--   <link rel="stylesheet" href="css/quoteWeb.css"> -->
+  <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    body{
+      height: 100vh;
+      background-image: linear-gradient(to right, rgb(128, 255, 255), rgb(0, 128, 255));
+    }
+    
+    .containerPadding{
+      padding: 100px;
+    }
+    
+    .footer{
+      padding-bottom: 0px;
+    }
+    @media (max-width: 750px) {
+      .containerPadding{
+        padding: 50px;
+        padding-top: 70px
+      }
+    }
+    @media (max-width: 500px) {
+      .containerPadding{
+        padding: 30px;
+        padding-top: 50px
+      }
+    }
+  </style>
+  <title>Maliha | List of My Projects | Today's Quote</title>
+</head>
+<body id="bgColor">
+  <div class="container text-center containerPadding">
+      <h1>Quote for Today</h1>
+
+      <hr>
+
+      <blockquote class="blockquote text-center">
+        <p class="mb-0"><em id="quote"></em></p>
+        <footer id="footer" class="blockquote-footer"></footer>
+      </blockquote>
+
+      <p id="greeting" class="lead"></p>
+      <p><small id="date"></small></p>
+
+  </div>
+
+  <div>
+    <footer class="container-fluid text-center containerPadding footer">
+      <p>
+        Copyright &copy; Maliha Kabir | 2019 <br>
+        <small>Designed by
+          <a href="https://www.linkedin.com/in/maliha-kabir-bb5867144/" target="
+          ">Maliha Kabir</a>
+      </p>
+    </footer>
+  </div>
+
+
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- custom js -->
+  <script type="text/javascript" src="js/quoteWeb.js"></script>
+</body>
+</html>
