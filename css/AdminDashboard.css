@@ -1,0 +1,125 @@
+body{
+  font-family: 'Rosario', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.0;
+  color: #212529;
+}
+/* main section */
+.main{
+  padding-bottom: 60px;
+  margin-top: 0px;
+}
+
+.container-fluid{
+  padding-left: 0px;
+}
+
+.sidebar{
+  padding: 60px -30px 30px 0px;
+}
+
+/* nav */
+.nav-sidebar{
+  margin: 60px -20px 20px 0px;
+}
+.nav-sidebar li{
+  padding: 5px 20px;
+  margin: 20px 0 5px 0;
+}
+.sidebar .nav-sidebar a{
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+.sidebar .nav-sidebar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.mainContainer{
+  margin-top: 30px;
+  padding: 20px;
+  padding-left: 35px;
+  border-left: 1px solid lightgrey;
+}
+.mainContainer h1, .btn-toolbar{
+  margin-top: 20px;
+}
+
+/*
+  pt = padding-top;
+  pb = padding-bottom;
+  mb = margin-bottom
+*/
+/* .paddingTop {
+    padding-top: 1rem!important;
+}
+.pdBottom{
+    padding-bottom: .5rem!important;
+}
+.mb-3 {
+    margin-bottom: 1rem!important;
+} */
+
+/* Clone Graphs starts */
+.chartjs-render-monitor {
+    animation: chartjs-render-animation 0.001s;
+}
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+}
+.w-100 {
+    width: 100%!important;
+}
+/* Clone Graphs ends */
+
+/* newly added styles starts */
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-sticky {
+    height: 100vh;
+}
+/* newly added styles ends */
+
+.placeholders{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.placeholder{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.placeholder img{
+  display: inline;
+  border-radius: 30%;
+}
+
+.footer > .container{
+  padding-top: 60px;
+}
+
+footer p{
+  display: block;
+  background-color: lightgrey;
+  padding: 15px;
+  margin-block-end: 0em;
+}
+
+footer .container-fluid{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* for top buttons */
+/* @media (min-width: 768px)
+.mb-md-0, .my-md-0 {
+    margin-bottom: 0!important;
+} */
