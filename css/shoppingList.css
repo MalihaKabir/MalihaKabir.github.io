@@ -2,8 +2,18 @@ body{
   height: 100vh;
   padding-top: 50px;
   /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(100, 177, 255)); */
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 240, 240));
+/*   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 240, 240)); */
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 255, 255), rgb(0, 128, 255), rgb(128, 255, 255), #e94584, rgb(255, 128, 192), rgb(255, 255, 128), rgb(128, 255, 128), rgb(255, 255, 128), rgb(255, 255, 255));
+  background-size: 1000% 100%;
+  animation: gradient 50s linear infinite;
+  animation-direction: alternate;
 }
+/*     keyframe for gradient body */
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
 #heading{
   width: 50%;
   padding-bottom: 5px;
