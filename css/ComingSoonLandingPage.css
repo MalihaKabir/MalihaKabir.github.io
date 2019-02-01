@@ -5,6 +5,7 @@ html{
 body{
   background: url(https://images.unsplash.com/photo-1536213862235-80c78ec50429?ixlib=rb-0.3.5&s=d189fe50318743ec9ccf3c57ae2fb293&auto=format&fit=crop&w=755&q=80%20755w,) no-repeat center;
   background-size: cover;
+  background-size: 100vh;
 
   /* background: url(../img/img1.jpg) no-repeat center center;
   background-size: 100%; */
