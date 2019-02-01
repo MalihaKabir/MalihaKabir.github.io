@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- google font link -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
+  <!-- favicon link -->
+  <link rel="shortcut icon" type="image/ico" href="../img/favicon-connectdevelop1.ico">
+  <!-- custom link -->
+  <link rel="stylesheet" href="../css/AdminDashboard.css">
+  <title>Admin-Dashboard (JavaScript-clone)</title>
+</head>
+<body>
+  <!-- navbar starts here -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+    <!-- mb-5 = margin-bottom, not in-built -->
+    <a class="navbar-brand" href="#">AdminDashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-cog"></i> Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="far fa-question-circle"></i>
+            <!-- <i class="fas fa-hands-helping"></i>  -->
+            Help</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Add Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-copy"></i> Add Categories</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- container-fluid starts here -->
+  <div class="container-fluid main">
+
+    <!-- container row starts -->
+    <div class="row">
+
+      <!-- Sidebar / container left-Column starts -->
+      <div class="sidebar sidebar-sticky col-sm-0 col-md-2 d-none d-md-block bg-light">
+        <ul class="nav nav-sidebar flex-column">
+          <li class="active"><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+          <li><a href="#"><i class="fas fa-hourglass-start"></i> Stats</a></li>
+          <li><a href="#"><i class="fas fa-chart-line"></i> Graphs</a></li>
+          <li><a href="#"><i class="fas fa-user-tie"></i> Users</a></li>
+        </ul>
+
+        <ul class="nav nav-sidebar flex-column">
+          <h6 class="sidebarHeading d-flex justify-content-between align-items-center px-3 mt-3 mb-1 text-muted">
+            Additional Reports<i class="fas fa-plus-circle"></i>
+          </h6>
+          <li class="active"><a href="#"><i class="fas fa-folder-open"></i> Reports</a></li>
+          <li><a href="#"><i class="fas fa-file-invoice"></i> Revenue</a></li>
+          <li><a href="#"><i class="fas fa-globe"></i> Countries</a></li>
+          <li><a href="#">
+            <!-- <i class="far fa-comments"></i> -->
+            <i class="fas fa-exclamation-triangle"></i>
+             Spammers</a>
+           </li>
+        </ul>
+      </div>
+      <!-- Sidebar / container left-Column ends -->
+
+      <!-- Maincontaier / main-Right Column starts -->
+      <div class="col-sm-12 col-md-10 mainContainer">
+        <div class="d-flex justify-content-between flex-wrap flex-sm-nowrap align-items-center paddingTop pdBottom mb-3 border-bottom">
+
+          <h1>
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+          </h1>
+
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary">Share</button>
+              <button class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle"><i class="far fa-calendar"></i> This week</button>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row placeholders">
+          <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1000" height="422" style="display: block; width: 1000px; height: 422px;"></canvas>
+        </div>
+        <h2 class="sub-header">
+          Detailed result
+        </h2>
+        <hr>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID#</th>
+                <th scope="col">Detail 1#</th>
+                <th scope="col">Detail 2#</th>
+                <th scope="col">Detail 3#</th>
+                <th scope="col">Detail 4#</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>John</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+              <tr>
+                <th scope="row">234</th>
+                <td>Doe</td>
+                <td>Pentesting</td>
+                <td>China</td>
+                <td>90$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Maincontaier / main-Right Column ends -->
+
+    </div>
+    <!-- container row ends -->
+
+  </div>
+  <!-- container-fluid ends here -->
+
+
+  <!-- footer goes here -->
+  <footer class="footer">
+    <div class="container-fluid text-center fixed-bottom">
+      <p>2018 &copy; Maliha Kabir</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Clone Graphs starts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  <script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        datasets: [{
+          data: [14000, 21345, 18483, 24003, 23489, 24092, 12034],
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false,
+        }
+      }
+    });
+  </script>
+  <!-- Clone Graphs ends -->
+
+</body>
+
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</html>
