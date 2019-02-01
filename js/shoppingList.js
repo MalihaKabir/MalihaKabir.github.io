@@ -24,8 +24,8 @@ function createItems() {
   btnEdit.appendChild(document.createTextNode("Mark as Done"));
 
   li.appendChild(document.createTextNode(input.value))
-  li.appendChild(btn);
   li.appendChild(btnEdit);
+  li.appendChild(btn);
   ol.appendChild(li)
   input.value = ""
 
