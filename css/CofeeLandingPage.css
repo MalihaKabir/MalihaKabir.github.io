@@ -1,7 +1,6 @@
 body{
   background: url(../img/coffee-2.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-size: 100vh;
 }
 
 .showcase{
@@ -19,4 +18,10 @@ body{
 .imgThumbnail{
   height: 90px;
   width: 70px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-size: 100vh;
+  }
 }
