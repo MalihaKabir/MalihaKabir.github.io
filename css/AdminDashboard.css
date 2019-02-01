@@ -118,6 +118,10 @@ footer .container-fluid{
   padding-left: 0px;
 }
 
+#footerP{
+  margin-bottom: 0;
+}
+
 /* for top buttons */
 /* @media (min-width: 768px)
 .mb-md-0, .my-md-0 {
