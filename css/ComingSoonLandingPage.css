@@ -1,0 +1,89 @@
+html{
+  height: 100%;
+}
+
+body{
+  background: url(https://images.unsplash.com/photo-1536213862235-80c78ec50429?ixlib=rb-0.3.5&s=d189fe50318743ec9ccf3c57ae2fb293&auto=format&fit=crop&w=755&q=80%20755w,) no-repeat center;
+  background-size: cover;
+
+  /* background: url(../img/img1.jpg) no-repeat center center;
+  background-size: 100%; */
+
+  font-family: 'Catamaran', sans-serif;
+
+  /* use 'padding-top' so that your navbar doesn't cover the top parts of the body-elements */
+  padding-top: 30px;
+}
+
+/* .bg-light{
+  background-color: #e6f3ff!important;
+} */
+
+.navbar .navbar-brand{
+  color: black;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgba(0,0,0,.6);
+}
+
+.aLink{
+  color: rgba(0,0,0,.4);
+}
+.aLink:hover{
+  color: rgba(0,0,0,.6);
+}
+.aLink:active{
+  color: rgba(0,0,0);
+  background: transparent;
+}
+
+.mainArea{
+  padding-top: 08%;
+}
+
+h1, p, .topIcon2{
+  /* color: chartreuse; */
+  color: #007399;
+  color: #00394d;
+  /* color: #004b66; */
+}
+
+.topIcon1{
+  color: #00394d;
+  /* color: #004b66; */
+}
+
+#imgLogo{
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+form{
+  padding: 0px 15px 0px 15px;
+}
+
+.form-group{
+  padding: 5px;
+}
+
+#formFtr{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.bg-clr{
+  background-color: transparent;
+}
+
+.bg-clr:hover{
+  color: #00394d;
+  font-size: 1.01em;
+}
+
+.dropdownWidth{
+  min-width: 150px;
+}
