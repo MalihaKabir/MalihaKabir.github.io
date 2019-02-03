@@ -121,7 +121,7 @@ html{
   height: 3em;
   width: 12rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .visitColumn{
     padding-bottom: 2em;
   }
