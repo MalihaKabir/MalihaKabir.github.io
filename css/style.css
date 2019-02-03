@@ -86,7 +86,7 @@ html{
   background-color: rgb(34, 134, 229);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .skills h2, .aboutContentPadding h2, .extraKnowledge h2{
     border-bottom: solid rgb(34, 134, 229);
     border-width: thin;
