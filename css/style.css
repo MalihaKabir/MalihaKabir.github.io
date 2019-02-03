@@ -105,7 +105,7 @@ html{
   color: #f1f1f1;
   margin-top: 6rem;
   margin-bottom: 4rem;
-  /* padding-top: 2rem; */
+  padding-top: 3rem;
   padding-bottom: 3rem;
   /* margin-bottom: 2rem; */
 }
@@ -122,6 +122,10 @@ html{
   width: 12rem;
 }
 @media (max-width: 768px) {
+  .hitCounter{
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
   .visitColumn{
     padding-bottom: 2em;
   }
