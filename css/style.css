@@ -140,9 +140,9 @@ html{
 .containerPadding{
   padding: 3em 0em 5em;
 }
-.emClass{
+/* .emClass{
   text-decoration: underline;
-}
+} */
 
 .footerPadding{
   padding-top: 2.5em;
