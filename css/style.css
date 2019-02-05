@@ -108,6 +108,7 @@ html{
   padding-top: 3rem;
   padding-bottom: 3rem;
   /* margin-bottom: 2rem; */
+  opacity: 0.9;
 }
 .hitCounterIcon{
   color: #f1f1f1;
