@@ -1,0 +1,101 @@
+body{
+  background-color: #f4f4f4;
+  color: #555;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #006600;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+a:hover{
+  font-weight: 600;
+}
+
+#mainHeader{
+  background-color: #006600;
+  color: #ffff33;
+}
+
+#navbar{
+  background: #ffff80;
+}
+
+#navbar ul{
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li{
+  display: inline;
+}
+
+#showcase{
+  background-image: url(../img/Children-1.jpg);
+  background-position: center;
+  min-height: 400px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+#showcase h1{
+  color: black /*#b3e6ff*/;
+  margin-top: 150px;
+  font-size: 15px;
+  word-spacing: .3em;
+  letter-spacing: .2em;
+  line-height: 1.6em;
+}
+
+#mainArea{
+  float: left;
+  width: 70%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  float: right;
+  width: 30%;
+  background-color: #4d4d00;
+  color: #ffff99;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#mainFooter{
+  background-color: #003300;
+  color: #b3ffb3;
+  text-align: center;
+  padding: 14px;
+}
+
+
+@media (max-width:600px) {
+  #mainArea{
+    float: none;
+    width: 100%;
+  }
+
+  #sidebar{
+    float: none;
+    width: 100%;
+  }
+}
