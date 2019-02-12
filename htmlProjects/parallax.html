@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- js for parallax -->
+  <script src="../js/parallax.min.js"></script>
+  <!-- favicon link -->
+  <link rel="shortcut icon" type="image/ico" href="../img/favicon-connectdevelop1.ico">
+  <!-- custom link -->
+  <link rel="stylesheet" href="../css/parallax.css">
+  <title>HTMLSkeleton-CopyProject</title>
+</head>
+  <body>
+    <!-- div for navbar starts here -->
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bgTransparent">
+          <div class="container">
+
+            <a class="navbar-brand" href="#">Travelers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- navbar left of navbar starts here -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About-Pokemons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Catch-Pokemons</a>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+
+                  <div class="dropdown-menu dropdownWidth" aria-labelledby="navbarDropdown">
+                    <a href="#" class="dropdown-item bg-clr">
+                      California
+                    </a>
+                    <a class="btn dropdown-item bg-clr" href="#">
+                      London
+                    </a>
+                    <a class="btn btn-tw dropdown-item bg-clr" href="#">
+                      SaintMartin
+                    </a>
+                    <a class="btn btn-tw dropdown-item bg-clr" href="#">
+                      Brazil
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">
+                      Upcoming Gigs
+                    </div>
+                    <a class="btn btn-tw dropdown-item bg-clr" href="#">
+                      Sylhet
+                    </a>
+                  </div>
+                </li>
+                <!-- DROPDOWN -->
+              </ul>
+              <!-- navbar left ends here -->
+
+              <!-- navbar-right starts from here -->
+              <ul class="nav navbar-nav navbar-right">
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign Up</a> -->
+                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                  </a>
+
+
+                  <div class="dropdown-menu dropdown-menu-right dropdownWidth" aria-labelledby="navbarDropdown">
+                    <a href="#" class="btn-fb dropdown-item bg-clr">
+                      <i class="fab fa-facebook-square"></i> Facebook
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="btn btn-tw dropdown-item bg-clr" href="#">
+                      <i class="fab fa-google-plus"></i> Google+
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="btn btn-tw dropdown-item bg-clr" href="#">
+                      <i class="far fa-envelope"></i> E-mail
+                    </a>
+                  </div>
+                </li>
+                <!-- DROPDOWN -->
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" role="button" data-target="#login-modal">
+                    <i class="fas fa-user-check"></i> Log In
+                  </a>
+
+
+                </li>
+
+              </ul>
+              <!-- navbar-right ends here -->
+
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- div for navbar ALMOST ends here -->
+
+    <!-- modal starts from here. Always use it in the body directly. -->
+    <div class="modal fade" id="login-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header text-center">
+            <img id="imgLogo" class="img-thumbnail" src="img/logoModal.jpg" alt="logo">
+          </div>
+
+          <div class="modal-body" id="div-form">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="col-form-label">Type your email and password here:</label>
+                <input type="email" class="form-control" placeholder="Enter email" required>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox">
+                <label class="form-check-label">Remember password
+                </label>
+              </div>
+              <div class="modal-footer form-group" id="formFtr">
+                <button type="submit" class="btn btn-info btn-block">Log In</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- modal ends here -->
+    <!-- div for navbar FINALLY ends here -->
+
+
+    <!-- parallax body starts here -->
+    <div class="main parallax-window" data-parallax="scroll" data-image-src="../img/dog.jpeg">
+      <div class="img1 center">
+        <span>
+          <h1>Lorem ipsum dolor sit amet</h1>
+        </span>
+      </div>
+    </div>
+
+    <section class="section blue main parallax-window" data-parallax="scroll" data-image-src="../img/cat.jpeg">
+      <div class="center">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis, rerum praesentium natus tempore blanditiis minima ipsa, quis libero recusandae ipsum, facere officia culpa.</p>
+      </div>
+    </section>
+
+    <div class="main parallax-window" data-parallax="scroll" data-image-src="../img/dog.jpeg">
+      <div class="img2 center">
+        <span>
+          <h1>Lorem ipsum dolor sit amet</h1>
+        </span>
+      </div>
+    </div>
+
+    <section class="section blue main parallax-window" data-parallax="scroll" data-image-src="../img/cat.jpeg">
+      <div class="center">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis, rerum praesentium natus tempore blanditiis minima ipsa, quis libero recusandae ipsum, facere officia culpa.</p>
+      </div>
+    </section>
+
+    <div class="main parallax-window" data-parallax="scroll" data-image-src="../img/dog.jpeg">
+      <div class="img3 center">
+        <span>
+          <h1>Lorem ipsum dolor sit amet</h1>
+        </span>
+      </div>
+    </div>
+
+    <section class="section blue main parallax-window" data-parallax="scroll" data-image-src="../img/cat.jpeg">
+      <div class="center">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis, rerum praesentium natus tempore blanditiis minima ipsa, quis libero recusandae ipsum, facere officia culpa.</p>
+      </div>
+    </section>
+
+    <div class="main parallax-window" data-parallax="scroll" data-image-src="../img/dog.jpeg">
+      <div class="img3 center">
+        <span>
+          <h1>Lorem ipsum dolor sit amet</h1>
+        </span>
+      </div>
+    </div>
+    <!-- parallax body ends here -->
+
+  </body>
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</html>
