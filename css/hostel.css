@@ -1,0 +1,259 @@
+html{
+  scroll-behavior: smooth;
+}
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+/* navbar starts */
+.navbarPadding{
+  padding: 15px 25px;
+}
+.navbar-dark{
+  background-color: #555;
+}
+/* navbar ends */
+
+.pimg1, .pimg3{
+  position: relative;
+  opacity: 0.60;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+    fixed = Parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+
+}
+.pimg1{
+  background-image: url('../img/cover2.jpeg');
+  min-height: 100%;
+}
+
+.pimg3{
+  background-image: url('../img/hostelImg1.jpg');
+  min-height: 50%;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 1.61rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.section{
+  text-align: center;
+  padding: 8rem 5rem 1rem;
+}
+
+h2{
+  color: #555;
+  padding-bottom: 1.5rem;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #555;
+}
+
+.service{
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.serviceOne{
+  padding-top: 1rem;
+}
+.serviceTwo, .serviceThree{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.serviceThree{
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+}
+
+/* form starts */
+.formWrapper{
+  color: #000;
+  padding: 34px 17px;
+  max-width: 1020px;
+  padding: 96px 32px;
+  margin-top: 1.5em;
+  margin-bottom: 5%;
+}
+.formHeadingTitle{
+  font-size: 25px;
+  font-weight: 550;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  line-height: 1.2em;
+  padding: 0;
+}
+.formHeadingDescription {
+  font-size: 13px;
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  margin: 17px 0;
+  padding: 0;
+  line-height: 1.6em;
+  color: rgba(26,26,26,.7);
+}
+.formBody{
+  margin-top: 25px;
+  padding: 10px 20px;
+}
+.formBody .col-md-5{
+  padding-right: 0px;
+}
+.formBody .col-md-2{
+  padding-right: 0px;
+  padding-left: 12px;
+}
+.formBody input{
+  padding: .87em 1em;
+
+}
+.form-group .btn-info{
+  margin: 0;
+}
+.form-group .btn-lg{
+  /* background-color: #1f1f1f; */
+  background-color: #555!important;
+  padding: 1em 2.6em;
+  border-radius: 0px;
+  font-weight: 600;
+}
+.form-group .btn-info:active{
+  border: 1px solid #000;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.btn-info{
+  font-style: normal;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* text-decoration: none; */
+  padding: 1em 1.85em;
+  margin: 15px 10px;
+  color: #fff;
+  border: none;
+}
+.btn-info:hover{
+  opacity: 0.8;
+}
+
+.btn-info:active{
+  background-color: rgba(0,0,0, 0.5) !important;
+  color: #fff !important;
+}
+/* Form ends */
+
+@media (max-width: 786px) {
+  .section{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .service{
+    padding-bottom: 5rem;
+  }
+  .servicePara{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .pimg1{
+    background-attachment: scroll;
+  }
+  span{
+    font-size: 0.625rem;
+    font-size: 0.78rem;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 338px) {
+  span{
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+  }
+}
+
+
+.footerInner{
+  padding: 64px 32px;
+  max-width: 1020px;
+  /* box-sizing: border-box; */
+}
+.siteInfo{
+  /* font-family: proxima-nova; */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,.8);
+}
+.siteAddress+.tel{
+  margin-left: 1em;
+}
+/* .tel{
+  white-space: nowrap;
+} */
+.siteInfo .siteEmail{
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+}
+.tel+.siteEmail{
+  margin-left: 1em;
+}
+.siteEmail{
+  white-space: nowrap;
+}
+.footerLabel{
+  /* margin-top: 1.5em; */
+  margin-top: 1.57em;
+  font-family: adobe-garamond-pro;
+}
+.footerLabel a{
+  /* color: rgba(255,255,255,.4); */
+  text-decoration: underline;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 1.6em;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: #444;
+}
