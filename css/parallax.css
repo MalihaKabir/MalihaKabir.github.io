@@ -1,0 +1,67 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.8em;
+  padding-top: 26px;
+  /* use 'padding-top' so that your navbar doesn't cover the top parts of the body-elements */
+}
+
+.main{
+  min-height: 100%;
+}
+
+/* modal problem */
+/* .modal-backdrop {
+    z-index: 1040 !important;
+}
+.modal-dialog {
+    z-index: 1100 !important;
+} */
+
+/* .blue{
+  min-height: 300px;
+  background-color: lightblue;
+} */
+
+h1, p{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.center{
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+.bgTransparent{
+  opacity: 0.8;
+}
+
+#imgLogo{
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+
+form{
+  /* padding: 0px 15px 0px 15px; */
+  padding: 0px 12px 8px 12px;
+}
+
+.form-group{
+  padding: 5px;
+}
+
+#formFtr{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
