@@ -1,0 +1,18 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html, body{
+  height: 100%;
+}
+
+#clock{
+  /* background-color: blueviolet; */
+  color: #f1f1f1;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  position: relative;
+  top: 40%;
+  margin-top: -2rem;  /* half of font-size to make sure that the fonts are vertically in the middle of the div. */
+  text-align: center;
+  /* border: 2px solid #555; */
+}
