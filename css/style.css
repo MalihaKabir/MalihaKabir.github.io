@@ -43,7 +43,7 @@ html{
   left: 0;
   /* right: 0%; */
 /*   height: 550px!important; */
-  height: 34.5rem!important;
+  height: 31rem!important;
   /* width: 100vh!important; */
 }
 .blink{
@@ -98,10 +98,22 @@ html{
   background-color: rgb(34, 134, 229);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .skills h2, .aboutContentPadding h2, .extraKnowledge h2{
     border-bottom: solid rgb(34, 134, 229);
     border-width: thin;
+  }
+} */
+@media (max-width: 576px) {
+  .skills h2, .aboutContentPadding h2, .extraKnowledge h2{
+    border-bottom: solid rgb(34, 134, 229);
+    border-width: thin;
+  }
+  .particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35em!important;
   }
 }
 
