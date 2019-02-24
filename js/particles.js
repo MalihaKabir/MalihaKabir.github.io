@@ -1491,8 +1491,8 @@ window.particlesJS = function(tag_id, params){
 
   /* pJS elements */
   var pJS_tag = document.getElementById(tag_id),
-      pJS_canvas_class = 'particles-js-canvas-el',
-      exist_canvas = pJS_tag.getElementsByClassName(pJS_canvas_class);
+      pJSCanvasClass = 'particles-js-canvas-el',
+      exist_canvas = pJS_tag.getElementsByClassName(pJSCanvasClass);
 
   /* remove canvas if exists into the pJS target tag */
   if(exist_canvas.length){
@@ -1503,7 +1503,7 @@ window.particlesJS = function(tag_id, params){
 
   /* create canvas element */
   var canvas_el = document.createElement('canvas');
-  canvas_el.className = pJS_canvas_class;
+  canvas_el.className = pJSCanvasClass;
 
   /* set size canvas */
   canvas_el.style.width = "100%";
