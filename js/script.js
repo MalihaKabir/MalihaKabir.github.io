@@ -1,7 +1,7 @@
 // typed js code:
 var options = {
   // strings: ["A Front-End Developer", "&amp;", "A Javascript Developer"],
-  strings: ["A Front-End Developer", "And", "A Javascript Developer"],
+  strings: ["A Front-End Developer", "A Javascript Developer"],
   typeSpeed: 100
 }
 
