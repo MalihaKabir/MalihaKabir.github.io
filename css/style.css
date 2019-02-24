@@ -45,6 +45,9 @@ html{
   height: 550px!important;
   /* width: 100vh!important; */
 }
+.blink{
+  display: inline-block;
+}
 /* jumbotron ends here */
 
 /* About style starts */
