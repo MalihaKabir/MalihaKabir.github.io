@@ -37,6 +37,14 @@ html{
   color: #f1f1f1;
   padding-bottom: 3rem;
 }
+.particles-js-canvas-el{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0%; */
+  height: 550px!important;
+  /* width: 100vh!important; */
+}
 /* jumbotron ends here */
 
 /* About style starts */
