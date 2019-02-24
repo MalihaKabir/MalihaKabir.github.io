@@ -1,3 +1,13 @@
+// typed js code:
+var options = {
+  // strings: ["A Front-End Developer", "&amp;", "A Javascript Developer"],
+  strings: ["A Front-End Developer", "And", "A Javascript Developer"],
+  typeSpeed: 100
+}
+
+var typed = new Typed(".blink", options);
+
+// navbar code:
 let navFadeOnScroll = window.pageYOffset
 let documentId = document.getElementById('navId')
 
