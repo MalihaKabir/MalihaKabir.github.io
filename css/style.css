@@ -42,7 +42,8 @@ html{
   top: 0;
   left: 0;
   /* right: 0%; */
-  height: 550px!important;
+/*   height: 550px!important; */
+  height: 34.7rem!important;
   /* width: 100vh!important; */
 }
 .blink{
