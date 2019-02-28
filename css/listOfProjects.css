@@ -23,6 +23,10 @@ a:hover {
   text-decoration: none;
 }
 
+.hrColor{
+  background-color: #c1c1c1;
+}
+
 /*     keyframe for gradient body */
 /* @keyframes gradient {
     0% {background-position: 0%}
