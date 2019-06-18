@@ -1,29 +1,19 @@
 // navbar code:
-// let navFadeOnScroll = window.pageYOffset;
-// let documentId = document.getElementById('navId');
+let navFadeOnScroll = window.pageYOffset;
+let documentId = document.getElementById('navId');
 
-// let onScrollFunction = () => {
-// 	let currentScrollPosition = window.pageYOffset;
-// 	if (navFadeOnScroll > currentScrollPosition) {
-// 		documentId.style.top = '0';
-// 	} else {
-// 		documentId.style.top = '-100px';
-// 	}
-// 	navFadeOnScroll = currentScrollPosition;
-// };
-
-// window.onscroll = onScrollFunction;
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	if (prevScrollpos > currentScrollPos) {
-		document.getElementById('navId').style.top = '0';
+let onScrollFunction = () => {
+	let currentScrollPosition = window.pageYOffset;
+	if (navFadeOnScroll > currentScrollPosition) {
+		documentId.style.top = '0';
 	} else {
-		document.getElementById('navId').style.top = '-100px';
+		documentId.style.top = '-100px';
 	}
-	prevScrollpos = currentScrollPos;
+	navFadeOnScroll = currentScrollPosition;
 };
+
+window.onscroll = onScrollFunction;
+
 // navbar code ends.
 
 // Starting of type writing JS-(ES6 Class)

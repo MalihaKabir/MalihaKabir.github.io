@@ -135,6 +135,7 @@ a:hover {
 		height: 35rem !important;
 	}
 }
+/* Skill section ends here */
 
 /* Portfolio */
 .extraKnowledge {
@@ -145,12 +146,8 @@ a:hover {
 hgroup {
 	text-align: right;
 	/* font-family: Verdana, sans-serif; */
-	padding-right: 16px;
+	padding-right: 1em;
 	border-right: 5px solid #00c8d7;
-}
-
-.projects:hover {
-	transform: rotate(-7deg);
 }
 
 .projectImg {
@@ -170,12 +167,6 @@ hgroup {
 	}
 }
 @media (max-width: 767px) {
-	.projectImg {
-		width: 300px;
-		height: 250px;
-	}
-}
-@media (max-width: 576px) {
 	.projectImg {
 		width: 300px;
 		height: 250px;
