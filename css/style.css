@@ -1,10 +1,20 @@
 html {
 	scroll-behavior: smooth;
 }
+a:hover {
+	text-decoration: none;
+}
+
+.linkColor {
+	color: #027eac;
+}
 
 /* navbar starts here */
 .navLeft {
 	padding-left: 1em;
+}
+.nav-item {
+	padding-right: 1.5em;
 }
 #navId {
 	transition: top 0.5s;
@@ -65,6 +75,10 @@ html {
 	color: rgb(34, 134, 229);
 }
 
+.aboutf2 {
+	font-size: 1.8em;
+}
+
 .imgSize {
 	width: 150px;
 	height: 150px;
@@ -74,6 +88,10 @@ html {
 	.imgSize {
 		border: 2px solid rgb(34, 134, 229);
 	}
+}
+
+.modalIcon {
+	color: #00394d !important;
 }
 
 /* SKILLS */
@@ -117,45 +135,44 @@ html {
 		height: 35rem !important;
 	}
 }
+/* Skill section ends here */
 
-/* extraKnowledge */
+/* Portfolio */
 .extraKnowledge {
 	/*   padding-bottom: 5em; */
 	padding-bottom: 2rem;
 }
 
-/* hitCounter */
-.hitCounter {
-	/* height: 15rem; */
-	color: #f1f1f1;
-	margin-top: 6rem;
-	margin-bottom: 4rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	/* margin-bottom: 2rem; */
-	opacity: 0.9;
+hgroup {
+	text-align: right;
+	/* font-family: Verdana, sans-serif; */
+	padding-right: 1em;
+	border-right: 5px solid #00c8d7;
 }
-.hitCounterIcon {
-	color: #f1f1f1;
-	font-size: 2em;
+
+.projectImg {
+	width: 350px;
+	height: 300px;
 }
-.pageViews {
-	font-size: 1.25rem;
-	margin-bottom: 0;
-}
-.counterImg {
-	height: 3em;
-	width: 12rem;
-}
-@media (max-width: 768px) {
-	.hitCounter {
-		padding-top: 2.5rem;
-		padding-bottom: 3rem;
-	}
-	.visitColumn {
-		padding-bottom: 2em;
+@media (max-width: 1200px) {
+	.projectImg {
+		width: 300px;
+		height: 200px;
 	}
 }
+@media (max-width: 992px) {
+	.projectImg {
+		width: 200px;
+		height: 150px;
+	}
+}
+@media (max-width: 767px) {
+	.projectImg {
+		width: 300px;
+		height: 250px;
+	}
+}
+/* Portfolio */
 
 /* contact */
 [class^='imghvr-'],
