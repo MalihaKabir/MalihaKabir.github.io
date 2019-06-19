@@ -58,13 +58,29 @@ a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* right: 0%; */
-	/*   height: 550px!important; */
 	height: 31rem !important;
-	/* width: 100vh!important; */
 }
 .blink {
 	display: inline-block;
+}
+
+@media (max-width: 768px) {
+	.jumboH1Text {
+		font-size: 3em;
+	}
+}
+@media (max-width: 535px) {
+	.jumboH1Text {
+		font-size: 2.5em;
+	}
+}
+@media (max-width: 435px) {
+	.jumboH1Text {
+		font-size: 2em;
+	}
+	.jumboPText {
+		font-size: 1.2em;
+	}
 }
 /* jumbotron ends here */
 
@@ -96,10 +112,6 @@ a:hover {
 		border: 2px solid rgb(34, 134, 229);
 	}
 }
-
-/* .modalIcon {
-	color: #00394d !important;
-} */
 
 /* SKILLS */
 .skills {

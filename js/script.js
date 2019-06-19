@@ -4,6 +4,7 @@ let documentId = document.getElementById('navId');
 
 let onScrollFunction = () => {
 	let currentScrollPosition = window.pageYOffset;
+	//  && deviceWidth >= 769
 	if (navFadeOnScroll > currentScrollPosition) {
 		documentId.style.top = '0';
 	} else {
@@ -13,8 +14,7 @@ let onScrollFunction = () => {
 };
 
 window.onscroll = onScrollFunction;
-
-// navbar code ends.
+// end of navbar code.
 
 // Starting of type writing JS-(ES6 Class)
 class TypeWriter {
