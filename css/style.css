@@ -8,6 +8,13 @@ a:hover {
 .linkColor {
 	color: #027eac;
 }
+.growClass {
+	cursor: pointer;
+	transition: transform 1s;
+}
+.growClass:hover {
+	transform: scale(1.1);
+}
 
 /* navbar starts here */
 .navLeft {
@@ -80,9 +87,9 @@ a:hover {
 }
 
 .imgSize {
-	width: 150px;
-	height: 150px;
-	border: 3px solid rgb(34, 134, 229);
+	width: 11.5em;
+	height: 11.5em;
+	border: 3.5px solid rgb(34, 134, 229);
 }
 @media (max-width: 768px) {
 	.imgSize {
@@ -90,9 +97,9 @@ a:hover {
 	}
 }
 
-.modalIcon {
+/* .modalIcon {
 	color: #00394d !important;
-}
+} */
 
 /* SKILLS */
 .skills {
