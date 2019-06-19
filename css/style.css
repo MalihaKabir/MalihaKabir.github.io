@@ -93,6 +93,11 @@ a:hover {
 	padding-top: 6rem;
 	padding-bottom: 2rem;
 }
+@media (max-width: 576px) {
+	.aboutPadding {
+		padding-top: 5rem;
+	}
+}
 
 .aboutContentPadding {
 	padding-top: 3rem;
