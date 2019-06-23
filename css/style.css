@@ -104,7 +104,7 @@ a:hover {
 }
 /* jumbotron ends here */
 
-/* About style starts */
+/* ABOUT - style starts */
 .aboutPadding {
 	padding-top: 6rem;
 	padding-bottom: 2rem;
@@ -137,6 +137,7 @@ a:hover {
 		border: 2px solid rgb(34, 134, 229);
 	}
 } */
+/* End of ABOUT section */
 
 /* SKILLS */
 .skills {
@@ -215,7 +216,7 @@ hgroup {
 		height: 250px;
 	}
 }
-/* Portfolio */
+/* Portfolio section ends */
 
 /* contact section starts */
 [class^='imghvr-'],

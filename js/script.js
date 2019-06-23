@@ -84,7 +84,7 @@ function init() {
 }
 // end of type writing.
 
-// Fade in effect on Scroll:
+// Scroll effect- FadeIn:
 let numberOfScrollAppear = 1;
 
 const isVisible = (element) => {
