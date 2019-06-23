@@ -1,19 +1,35 @@
 html {
 	scroll-behavior: smooth;
 }
+
+/* all link on hover */
 a:hover {
 	text-decoration: none;
 }
 
+/* all link color */
 .linkColor {
 	color: #027eac;
 }
+
+/* img grow */
 .growClass {
 	cursor: pointer;
 	transition: transform 1s;
 }
 .growClass:hover {
 	transform: scale(1.1);
+}
+
+/* On-Scroll animation */
+.onScroll {
+	opacity: 0;
+	transform: translateY(50px);
+}
+.scrollAppear {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: 1s all ease-in-out;
 }
 
 /* navbar starts here */
