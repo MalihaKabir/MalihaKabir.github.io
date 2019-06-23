@@ -121,3 +121,4 @@ const throttle = (fn, wait) => {
 };
 
 document.addEventListener('scroll', throttle(scrollAppearFunc, 100));
+// end of Scroll effect
