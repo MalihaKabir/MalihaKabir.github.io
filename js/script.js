@@ -110,15 +110,18 @@ const scrollAppearFunc = (element) => {
 	numberOfScrollAppear++;
 };
 
-const throttle = (fn, wait) => {
-	let time = Date.now();
-	return () => {
-		if (time + wait - Date.now() < 0) {
-			fn();
-			time = Date.now();
-		}
-	};
-};
+// without _Lodash use this:
+// const throttle = (fn, wait) => {
+// 	let time = Date.now();
+// 	return () => {
+// 		if (time + wait - Date.now() < 0) {
+// 			fn();
+// 			time = Date.now();
+// 		}
+// 	};
+// };
+// document.addEventListener('scroll', throttle(scrollAppearFunc, 100));
 
-document.addEventListener('scroll', throttle(scrollAppearFunc, 100));
+// with lodash:
+document.addEventListener('scroll', _.throttle(scrollAppearFunc, 100));
 // end of Scroll effect
