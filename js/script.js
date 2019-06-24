@@ -123,5 +123,5 @@ const scrollAppearFunc = (element) => {
 // document.addEventListener('scroll', throttle(scrollAppearFunc, 100));
 
 // with lodash:
-document.addEventListener('scroll', _.throttle(scrollAppearFunc, 200));
+document.addEventListener('scroll', _.throttle(scrollAppearFunc, 100));
 // end of Scroll effect
