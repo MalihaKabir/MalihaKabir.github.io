@@ -18,7 +18,7 @@ window.onscroll = onScrollFunction;
 
 // Starting of type writing JS-(ES6 Class)
 class TypeWriter {
-	constructor(txtElement, words, wait = 3000) {
+	constructor (txtElement, words, wait = 3000) {
 		this.txtElement = txtElement;
 		this.words = words;
 		this.txt = '';
@@ -28,7 +28,7 @@ class TypeWriter {
 		this.isDeleting = false;
 	}
 
-	type() {
+	type () {
 		// Current index of word
 		const current = this.wordIndex % this.words.length;
 		// Get full text of current word
@@ -75,7 +75,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 // Init App
-function init() {
+function init () {
 	const txtElement = document.querySelector('.txt-type');
 	const words = JSON.parse(txtElement.getAttribute('data-words'));
 	const wait = txtElement.getAttribute('data-wait');
@@ -84,12 +84,12 @@ function init() {
 }
 // end of type writing.
 
-// Scroll effect- FadeIn:
+// SCROLL EFFECT- FadeIn:
 let numberOfScrollAppear = 1;
 
 const isVisible = (element) => {
 	let elementBox = element.getBoundingClientRect().top;
-	let distanceFromTop = window.innerHeight;
+	let distanceFromTop = window.innerHeight / 1.2;
 
 	if (elementBox < distanceFromTop) {
 		return true;
