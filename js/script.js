@@ -44,7 +44,7 @@ class TypeWriter {
 		}
 
 		// Insert txt into element
-		this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+		this.txtElement.innerHTML = `<span>${this.txt}</span>`;
 
 		// Initial Type Speed
 		let typeSpeed = 100;
@@ -106,7 +106,7 @@ const scrollAppearFunc = (element) => {
 		}
 	});
 
-	console.log(numberOfScrollAppear);
+	// console.log(numberOfScrollAppear);
 	numberOfScrollAppear++;
 };
 
