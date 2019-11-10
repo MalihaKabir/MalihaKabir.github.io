@@ -8,6 +8,10 @@ $(window).scroll(function () {
 	}
 });
 
+$('.navbar-toggler').on('click', () => {
+	$('.navbar').addClass('bg-dark shadow')
+})
+
 // end of navbar code.
 
 // Starting of type writing JS-(ES6 Class)
