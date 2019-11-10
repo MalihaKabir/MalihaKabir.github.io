@@ -74,9 +74,15 @@ a:hover {
 	top: 0;
 	left: 0;
 	height: 31rem !important;
+	z-index: 10;
 }
 .blink {
 	display: inline-block;
+}
+
+#jumbotron-link {
+	position: absolute;
+	z-index: 11;
 }
 
 @media (max-width: 768px) {
