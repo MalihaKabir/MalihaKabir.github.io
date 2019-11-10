@@ -1,24 +1,18 @@
 // navbar code:
-let navFadeOnScroll = window.pageYOffset;
-let documentId = document.getElementById('navId');
 
-let onScrollFunction = () => {
-	let currentScrollPosition = window.pageYOffset;
-	//  && deviceWidth >= 769
-	if (navFadeOnScroll > currentScrollPosition) {
-		documentId.style.top = '0';
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 50) {
+		$('.navbar').addClass('bg-dark shadow')
 	} else {
-		documentId.style.top = '-100px';
+		$('.navbar').removeClass('bg-dark shadow')
 	}
-	navFadeOnScroll = currentScrollPosition;
-};
+});
 
-window.onscroll = onScrollFunction;
 // end of navbar code.
 
 // Starting of type writing JS-(ES6 Class)
 class TypeWriter {
-	constructor (txtElement, words, wait = 3000) {
+	constructor(txtElement, words, wait = 3000) {
 		this.txtElement = txtElement;
 		this.words = words;
 		this.txt = '';
@@ -28,7 +22,7 @@ class TypeWriter {
 		this.isDeleting = false;
 	}
 
-	type () {
+	type() {
 		// Current index of word
 		const current = this.wordIndex % this.words.length;
 		// Get full text of current word
@@ -75,7 +69,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 // Init App
-function init () {
+function init() {
 	const txtElement = document.querySelector('.txt-type');
 	const words = JSON.parse(txtElement.getAttribute('data-words'));
 	const wait = txtElement.getAttribute('data-wait');
