@@ -40,7 +40,7 @@ a:hover {
 	padding-right: 1.5em;
 }
 #navId {
-	transition: top 0.5s;
+	transition: all 0.5s;
 }
 .doubleDown {
 	padding-top: 0.8rem;
@@ -65,7 +65,6 @@ a:hover {
 
 /* jumbotron starts here */
 .jumbotron {
-	margin-top: 55px;
 	background-color: rgba(33, 37, 41, 1);
 	color: #f1f1f1;
 	padding-bottom: 3rem;
@@ -75,9 +74,15 @@ a:hover {
 	top: 0;
 	left: 0;
 	height: 31rem !important;
+	z-index: 10;
 }
 .blink {
 	display: inline-block;
+}
+
+#jumbotron-link {
+	position: absolute;
+	z-index: 11;
 }
 
 @media (max-width: 768px) {
