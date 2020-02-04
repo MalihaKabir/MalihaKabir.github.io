@@ -68,13 +68,18 @@ a:hover {
 	margin-top: 55px;
 	background-color: rgba(33, 37, 41, 1);
 	color: #f1f1f1;
-	padding-bottom: 3rem;
+	padding-bottom: 7.5rem;
 }
 .particles-js-canvas-el {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 31rem !important;
+	z-index: 10;
+}
+#jumbotron-link {
+	position: absolute;
+	z-index: 11;
 }
 .blink {
 	display: inline-block;
